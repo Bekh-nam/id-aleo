@@ -1,0 +1,10 @@
+{
+  "program": "id.aleo",
+  "version": "0.0.0",
+  "description": "Decentralized Identity",
+  "development": {
+      "private_key": "APrivateKey1zkp8wYsJ79xGvGMSQBkh2VLo3NxPZajbQZiZ2zbTVPmBAau",
+      "address": "aleo1vw7q53aea30xlk57fu6gnhdgcwqvh9arxcka30rctldmly67vugqk5zgpx"
+  },
+  "license": "MIT"
+}
