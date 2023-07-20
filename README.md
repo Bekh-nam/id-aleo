@@ -1,8 +1,12 @@
 # Decentralized ID <!-- omit in toc -->
 
 [![https://badges.frapsoft.com/os/mit/mit.svg?v=102](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://opensource.org/licenses/MIT)
+Published on [GitHub](https://github.com/)
 
-Published on [GitHub](https://github.com/MetaSpacecy)
+<div align="center">
+  <img alt="DID schema" src="assets/images/did_schema.png">
+</div>
+
 - [Summary](#summary)
 - [DID in the Aleo blockchain](#did-in-the-aleo-blockchain)
 - [Running the Program](#running-the-program)
