@@ -1,12 +1,14 @@
 # Decentralized ID <!-- omit in toc -->
 
 [![https://badges.frapsoft.com/os/mit/mit.svg?v=102](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://opensource.org/licenses/MIT)
-Published on [GitHub](https://github.com/)
+Published on [GitHub](https://github.com/Bekh-nam/id-aleo)
 
 <div align="center">
   <img alt="DID schema" src="assets/images/did_schema.png">
 </div>
 
+- [Demo](#demo)
+- [Program Id](#program-id-in-aleo-testnet-3)
 - [Summary](#summary)
 - [DID in the Aleo blockchain](#did-in-the-aleo-blockchain)
 - [Running the Program](#running-the-program)
@@ -17,6 +19,13 @@ Published on [GitHub](https://github.com/)
   - [Create Id](#create-id)
   - [Publish root associated to ID](#publish-root-associated-to-id)
   - [Bind proof associated to root](#bind-proof-associated-to-root)
+
+## Demo
+Play demo in [Id demo](https://play.leo-lang.org/?gistId=c115877a288d42462bd12278072ba870&revision=187e30718f49b2f035adb8be7514fd61685ba5e1)
+
+## Program ID in Aleo testnet 3
+- Program ID: id__k5zgpx.aleo
+[Aleo Explorer](https://www.aleo.network/programs/id__k5zgpx.aleo)
 
 ## Summary
 
@@ -98,7 +107,11 @@ leo run create_id
 ```
 
 ### Publish root associated to ID
-Publish this root `17646029704403646329262977545885904155278938368574073463104538741215567924227field` associated to this account `aleo1vw7q53aea30xlk57fu6gnhdgcwqvh9arxcka30rctldmly67vugqk5zgpx`
+Publish this root `17646029704403646329262977545885904155278938368574073463104538741215567924227field` associated to this account `aleo1vw7q53aea30xlk57fu6gnhdgcwqvh9arxcka30rctldmly67vugqk5zgpx` by invoking this function:
+```
+publish_root(root: field)
+```
+  - *root: field - the root data associated to id* 
 
 **Run**
 ```
@@ -107,6 +120,12 @@ leo run publish_root 17646029704403646329262977545885904155278938368574073463104
 
 ### Bind proof associated to root
 Bind this proof `17646029704403646329262977545885904155278938368574073463104538741215567924227field` associated to this root `17646029704403646329262977545885904155278938368574073463104538741215567924227field`
+
+```
+bind_proof(proof: field, root: field)
+```
+  - *proof: field - the proof associated to root*
+  - *root: field - the root data associated to id* 
 
 **Run**
 ```
